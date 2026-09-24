@@ -1,0 +1,16 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pizza Hut logo">
+  <defs>
+    <linearGradient id="phGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff5a5f"/>
+      <stop offset="100%" stop-color="#c92020"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="32" fill="#fff5ef"/>
+  <circle cx="80" cy="80" r="58" fill="url(#phGrad)"/>
+  <path d="M50 97c10-22 22-34 30-34s20 12 30 34c-12 6-23 9-30 9s-18-3-30-9Z" fill="#fff7f0" opacity="0.96"/>
+  <path d="M66 57c4 16 11 27 14 27s10-11 14-27" fill="none" stroke="#fff7f0" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="81" cy="78" r="5" fill="#ffd7a3"/>
+  <circle cx="67" cy="85" r="4" fill="#ffd7a3"/>
+  <circle cx="95" cy="85" r="4" fill="#ffd7a3"/>
+  <text x="80" y="115" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#ffffff">PH</text>
+</svg>

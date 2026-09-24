@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Pizza Hut</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container header-inner">
+          <a href="index.html" class="brand">
+            <img src="logo.svg" alt="Pizza Hut logo" class="brand-logo" />
+            <span>Pizza Hut</span>
+          </a>
+          <a href="index.html" class="btn btn-light">Back Home</a>
+        </div>
+      </header>
+
+      <main class="container form-wrap">
+        <section class="order-card">
+          <div class="heading-row">
+            <div>
+              <span class="eyebrow">Order</span>
+              <h1>Place your pizza order</h1>
+            </div>
+            <span class="pill">Fast delivery</span>
+          </div>
+
+          <form id="customerOrderForm" class="order-form">
+            <div class="field-row">
+              <label>
+                <span>Full name</span>
+                <input type="text" name="customerName" placeholder="John Smith" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="(555) 123-4567" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Choose item</span>
+                <select name="item" id="itemSelect" required>
+                  <option value="Pepperoni Party">Pepperoni Party</option>
+                  <option value="Supreme Delight">Supreme Delight</option>
+                  <option value="Margherita">Margherita</option>
+                  <option value="Garlic Bread">Garlic Bread</option>
+                  <option value="Fresh Soda">Fresh Soda</option>
+                  <option value="Buffalo Wings">Buffalo Wings</option>
+                </select>
+              </label>
+              <label>
+                <span>Quantity</span>
+                <input type="number" name="quantity" value="1" min="1" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Size</span>
+                <select name="size">
+                  <option value="Small">Small</option>
+                  <option value="Medium" selected>Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="Family">Family</option>
+                </select>
+              </label>
+              <label>
+                <span>Delivery type</span>
+                <select name="deliveryType">
+                  <option value="Delivery" selected>Delivery</option>
+                  <option value="Pickup">Pickup</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Delivery address</span>
+              <textarea name="address" rows="3" placeholder="123 Main Street, City" required></textarea>
+            </label>
+
+            <label>
+              <span>Order notes</span>
+              <textarea name="notes" rows="3" placeholder="Any extra requests..."></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+            <p id="orderMessage" class="message" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="order.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Velvet Roast favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f4b75a"/>
+      <stop offset="100%" stop-color="#e89d36"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#2b120d"/>
+  <circle cx="32" cy="32" r="22" fill="url(#bg)"/>
+  <path d="M22 28h20c1.7 0 3 1.3 3 3v6c0 7.2-5.8 13-13 13s-13-5.8-13-13v-6c0-1.7 1.3-3 3-3zm2 0c0-2.8 2.2-5 5-5h8c2.8 0 5 2.2 5 5" fill="none" stroke="#2b120d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 22c1.3-2.7 4.1-4.5 7.5-4.5S39.7 19.3 41 22" fill="none" stroke="#2b120d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 18c1.5-2 3.7-3 6-3s4.5 1 6 3" fill="none" stroke="#2b120d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 33h28" stroke="#2b120d" stroke-width="3" stroke-linecap="round"/>
+</svg>

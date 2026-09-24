@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Team Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="brand-mark">SA</div>
+          <div>
+            <strong>StudioFlow</strong>
+            <small>Team Portal</small>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+          <a class="active" href="#" data-nav="overview"><i class="fa-solid fa-table-columns"></i> Overview</a>
+          <a href="#" data-nav="tasks"><i class="fa-solid fa-list-check"></i> Tasks</a>
+          <a href="#" data-nav="analytics"><i class="fa-solid fa-chart-pie"></i> Analytics</a>
+          <a href="#" data-nav="team"><i class="fa-solid fa-users"></i> Team</a>
+          <a href="#" data-nav="settings"><i class="fa-solid fa-gear"></i> Settings</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p>Quarter goal</p>
+          <strong>84%</strong>
+          <span>Team on pace</span>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow-dark">Dashboard</p>
+            <h1 id="pageTitle">Team performance overview</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <label class="search-box" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search tasks" aria-label="Search tasks" />
+            </label>
+            <button class="icon-btn" aria-label="Notifications">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="profile-pill">
+              <div class="avatar">SA</div>
+              <div>
+                <strong>Sauban Ali</strong>
+                <small>Project Lead</small>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="page-panel active" data-view="overview">
+          <section class="stats-grid">
+            <article class="metric-card accent">
+              <span>Total Tasks</span>
+              <strong id="totalTasks">0</strong>
+              <small>Across all members</small>
+            </article>
+
+            <article class="metric-card">
+              <span>Completed</span>
+              <strong id="completedTasks">0</strong>
+              <small>Finished this week</small>
+            </article>
+
+            <article class="metric-card">
+              <span>Active Members</span>
+              <strong id="activeMembers">0</strong>
+              <small>Currently engaged</small>
+            </article>
+
+            <article class="metric-card">
+              <span>Productivity</span>
+              <strong id="productivityRate">0%</strong>
+              <small>Average completion</small>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Member workload</h2>
+                <button class="ghost-btn">Export</button>
+              </div>
+              <div id="memberList" class="member-list"></div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Task breakdown</h2>
+                <span class="status-badge">Live</span>
+              </div>
+              <div id="taskSummaryList" class="task-summary"></div>
+            </div>
+          </section>
+
+          <section class="bottom-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Weekly activity</h2>
+                <span class="muted-text">This month</span>
+              </div>
+              <div id="weeklyChart" class="weekly-chart" aria-label="Weekly activity chart"></div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Upcoming tasks</h2>
+                <a href="#">View all</a>
+              </div>
+              <ul class="upcoming-list">
+                <li>
+                  <div>
+                    <strong>UI Review</strong>
+                    <span>Today • 2:00 PM</span>
+                  </div>
+                  <span class="tag high">High</span>
+                </li>
+                <li>
+                  <div>
+                    <strong>Marketing copy</strong>
+                    <span>Tomorrow • 11:30 AM</span>
+                  </div>
+                  <span class="tag medium">Medium</span>
+                </li>
+                <li>
+                  <div>
+                    <strong>Bug fix sprint</strong>
+                    <span>Thu • 9:00 AM</span>
+                  </div>
+                  <span class="tag low">Low</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section class="page-panel" data-view="tasks">
+          <div class="panel large-panel">
+            <div class="panel-header">
+              <h2>Task board</h2>
+              <button class="ghost-btn">Add task</button>
+            </div>
+            <div class="task-table-wrap">
+              <table class="task-table">
+                <thead>
+                  <tr>
+                    <th>Task</th>
+                    <th>Owner</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Due</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Landing page redesign</td>
+                    <td>Alicia Kim</td>
+                    <td><span class="priority high">High</span></td>
+                    <td>Done</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Client onboarding flow</td>
+                    <td>Daniel Ross</td>
+                    <td><span class="priority medium">Medium</span></td>
+                    <td>In progress</td>
+                    <td>Today</td>
+                  </tr>
+                  <tr>
+                    <td>API integration testing</td>
+                    <td>Priya Shah</td>
+                    <td><span class="priority high">High</span></td>
+                    <td>In progress</td>
+                    <td>Tomorrow</td>
+                  </tr>
+                  <tr>
+                    <td>Campaign dashboard setup</td>
+                    <td>Oliver Lee</td>
+                    <td><span class="priority low">Low</span></td>
+                    <td>Done</td>
+                    <td>Completed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="analytics">
+          <div class="analytics-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Performance trend</h2>
+                <span class="status-badge">+18.4%</span>
+              </div>
+              <div class="trend-bars">
+                <span style="height: 35%"></span>
+                <span style="height: 48%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 67%"></span>
+                <span style="height: 82%"></span>
+                <span style="height: 94%"></span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Delivery metrics</h2>
+              </div>
+              <div class="metric-stack">
+                <div>
+                  <label>Completion rate</label>
+                  <strong>84%</strong>
+                </div>
+                <div>
+                  <label>Avg. response time</label>
+                  <strong>2.4 hrs</strong>
+                </div>
+                <div>
+                  <label>Team efficiency</label>
+                  <strong>91%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="team">
+          <div class="team-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Active team</h2>
+              </div>
+              <div class="team-list">
+                <div class="team-member">
+                  <div class="member-avatar dark">AK</div>
+                  <div>
+                    <strong>Alicia Kim</strong>
+                    <span>Frontend Lead</span>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <div class="member-avatar dark">DR</div>
+                  <div>
+                    <strong>Daniel Ross</strong>
+                    <span>Backend</span>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <div class="member-avatar dark">PS</div>
+                  <div>
+                    <strong>Priya Shah</strong>
+                    <span>Product Designer</span>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <div class="member-avatar dark">OL</div>
+                  <div>
+                    <strong>Oliver Lee</strong>
+                    <span>QA Analyst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="settings">
+          <div class="panel large-panel">
+            <div class="panel-header">
+              <h2>Workspace settings</h2>
+            </div>
+            <div class="settings-form">
+              <label>
+                <span>Project notifications</span>
+                <input type="checkbox" checked />
+              </label>
+              <label>
+                <span>Auto task updates</span>
+                <input type="checkbox" checked />
+              </label>
+              <label>
+                <span>Weekly summary email</span>
+                <input type="checkbox" />
+              </label>
+              <button class="btn-save">Save changes</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

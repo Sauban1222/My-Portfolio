@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velvet Roast serves premium coffee, handcrafted drinks, and cozy café vibes." />
+    <title>Velvet Roast | Premium Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="Velvet Roast home">
+          <img src="favicon.svg" alt="Velvet Roast logo" class="brand-mark" />
+          <span>Velvet Roast</span>
+        </a>
+
+        <button id="menu-open-button" class="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button id="menu-close-button" class="menu-close" aria-label="Close menu">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li><a href="#home" class="nav-links">Home</a></li>
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#menu" class="nav-links">Menu</a></li>
+          <li><a href="#testimonials" class="nav-links">Testimonials</a></li>
+          <li><a href="#gallery" class="nav-links">Gallery</a></li>
+          <li><a href="#contact" class="nav-links">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero-section">
+        <div class="container hero-content">
+          <div class="hero-details">
+            <span class="eyebrow">Freshly roasted daily</span>
+            <h1 class="title">Best coffee for your perfect morning.</h1>
+            <p class="description">
+              Brewed with care, sourced with passion, and served with a smile. Discover a café experience made for slow mornings and big energy.
+            </p>
+
+            <div class="buttons">
+              <a href="#menu" class="button primary">Order now</a>
+              <a href="#about" class="button secondary">About us</a>
+            </div>
+
+            <div class="hero-stats" aria-label="Coffee shop statistics">
+              <div>
+                <strong>3k+</strong>
+                <span>Happy customers</span>
+              </div>
+              <div>
+                <strong>15+</strong>
+                <span>Signature drinks</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Average rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Coffee cup illustration">
+            <div class="badge">Top Rated</div>
+            <img src="Coffee.png" alt="Cup of specialty coffee" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container section-grid">
+          <div class="section-copy">
+            <span class="eyebrow accent">About us</span>
+            <h2>Your neighborhood coffee ritual.</h2>
+            <p>
+              At Velvet Roast, every cup starts with ethically sourced beans and ends with a memorable experience. From our smooth espresso to our velvety iced lattes, we create drinks that bring people together.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check"></i> 100% ethically sourced beans</li>
+              <li><i class="fa-solid fa-check"></i> Small-batch roasting every week</li>
+              <li><i class="fa-solid fa-check"></i> Cozy atmosphere for work or catch-ups</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Our promise</h3>
+            <p>
+              We pour passion into every sip, balancing rich flavors with a welcoming café vibe that feels like home.
+            </p>
+            <div class="mini-details">
+              <div>
+                <strong>8 yrs</strong>
+                <span>in coffee craft</span>
+              </div>
+              <div>
+                <strong>25+</strong>
+                <span>baristas trained</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent">Popular menu</span>
+            <h2>Favorites from our bar</h2>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Vanilla Latte" />
+              <div class="menu-content">
+                <span class="menu-tag">Best seller</span>
+                <h3>Vanilla Latte</h3>
+                <p>Silky espresso with sweet vanilla bean and creamy milk.</p>
+                <div class="menu-meta">
+                  <strong>$6.50</strong>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="Cold Brew" />
+              <div class="menu-content">
+                <span class="menu-tag">Cold favorite</span>
+                <h3>Cold Brew</h3>
+                <p>Slow-steeped for a smooth finish and bright, rich taste.</p>
+                <div class="menu-meta">
+                  <strong>$5.75</strong>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=900&q=80" alt="Cappuccino" />
+              <div class="menu-content">
+                <span class="menu-tag">Classic</span>
+                <h3>Cappuccino</h3>
+                <p>Perfect foam, balanced espresso, and a comforting finish.</p>
+                <div class="menu-meta">
+                  <strong>$6.00</strong>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Mocha Dream" />
+              <div class="menu-content">
+                <span class="menu-tag">Seasonal</span>
+                <h3>Mocha Dream</h3>
+                <p>Chocolate, espresso, and whipped cream in a decadent sip.</p>
+                <div class="menu-meta">
+                  <strong>$7.25</strong>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons-section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent">Why choose us</span>
+            <h2>Everything you need for a better brew.</h2>
+          </div>
+
+          <div class="reason-grid">
+            <div class="reason-card">
+              <div class="icon-circle"><i class="fa-solid fa-mug-hot"></i></div>
+              <h3>Freshly brewed</h3>
+              <p>Every drink is made to order with premium ingredients.</p>
+            </div>
+            <div class="reason-card">
+              <div class="icon-circle"><i class="fa-solid fa-seedling"></i></div>
+              <h3>Ethically sourced</h3>
+              <p>We support growers who care about quality and sustainability.</p>
+            </div>
+            <div class="reason-card">
+              <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+              <h3>Fast service</h3>
+              <p>Warm hospitality and convenient service without the wait.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent">Testimonials</span>
+            <h2>Loved by coffee lovers everywhere.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card">
+              “The best cappuccino in town. Cozy, calm, and consistently delicious.”
+              <footer>
+                <strong>— Aisha M.</strong>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              “Every visit feels like a treat. Their cold brew is smooth and perfectly balanced.”
+              <footer>
+                <strong>— Daniel R.</strong>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              “Beautiful coffee and even better service. It is my go-to morning stop.”
+              <footer>
+                <strong>— Emma T.</strong>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-wrap">
+          <div class="contact-info">
+            <span class="eyebrow accent">Contact us</span>
+            <h2>Let’s plan your next coffee break.</h2>
+            <p>We’d love to hear from you about reservations, catering, or custom coffee events.</p>
+
+            <div class="info-list">
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>42 Willow Street, Brooklyn, NY</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (718) 555-0149</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>hello@velvetroast.com</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="field-row">
+              <div class="input-group">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+              </div>
+              <div class="input-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option>General inquiry</option>
+                  <option>Reservations</option>
+                  <option>Catering</option>
+                  <option>Partnership</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+
+            <button type="submit" class="button primary submit-btn">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Velvet Roast</p>
+        <div class="socials" aria-label="Social media links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

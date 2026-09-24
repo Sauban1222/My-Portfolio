@@ -1,0 +1,38 @@
+<svg width="1500" height="500" viewBox="0 0 1500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0B"/>
+      <stop offset="0.5" stop-color="#141416"/>
+      <stop offset="1" stop-color="#0D0D0F"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="90" y1="80" x2="410" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B31217"/>
+      <stop offset="0.5" stop-color="#D72638"/>
+      <stop offset="1" stop-color="#7A0D15"/>
+    </linearGradient>
+    <linearGradient id="textGlow" x1="560" y1="120" x2="1240" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E5D7"/>
+      <stop offset="1" stop-color="#E7B6A0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1500" height="500" rx="34" fill="url(#bg)"/>
+  <circle cx="1300" cy="80" r="150" fill="#B31217" opacity="0.12"/>
+  <circle cx="1460" cy="420" r="180" fill="#D72638" opacity="0.08"/>
+
+  <g transform="translate(86 90)">
+    <rect x="0" y="0" width="280" height="280" rx="68" fill="url(#brand)"/>
+    <rect x="34" y="34" width="212" height="212" rx="54" fill="#121214" opacity="0.28"/>
+    <path d="M111 90L60 140L111 190" stroke="#F8E5D7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M169 90L220 140L169 190" stroke="#F8E5D7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M152 70L126 212" stroke="#F8E5D7" stroke-width="14" stroke-linecap="round"/>
+    <path d="M84 214C100 188 122 176 143 176H150C171 176 192 188 209 214" stroke="#F8E5D7" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(430 110)">
+    <text x="0" y="90" fill="url(#textGlow)" font-size="76" font-weight="800" font-family="Segoe UI, Arial, sans-serif" letter-spacing="6">CODE</text>
+    <text x="0" y="170" fill="#D99A8A" font-size="38" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="7">WITH SAUBAN</text>
+    <rect x="0" y="210" width="550" height="6" rx="3" fill="url(#brand)"/>
+    <text x="0" y="280" fill="#E7B6A0" font-size="24" font-weight="600" font-family="Segoe UI, Arial, sans-serif" letter-spacing="5">WEB DEVELOPMENT • DESIGN • BRANDING</text>
+  </g>
+</svg>

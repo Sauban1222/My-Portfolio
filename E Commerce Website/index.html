@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora | Modern Streetwear</title>
+    <meta
+      name="description"
+      content="Shop premium shirts, pants, jeans, and pajamas with seasonal deals and modern essentials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">V</span>
+          <span>Velora</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#deals">Deals</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.82 12.8l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="icon-btn cart-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h14.2l-1.7 7.5a2 2 0 01-2 1.5H9.1a2 2 0 01-2-1.6L5.5 4.5H3V3h3.2l.6 3z"/></svg>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="cart-overlay" aria-hidden="true"></div>
+
+    <div class="checkout-modal" aria-hidden="true">
+      <div class="checkout-box">
+        <div class="checkout-header">
+          <div>
+            <p class="eyebrow">Checkout</p>
+            <h3>Complete your order</h3>
+          </div>
+          <button type="button" class="checkout-close" aria-label="Close checkout">×</button>
+        </div>
+
+        <form id="checkoutForm">
+          <div class="form-grid">
+            <label>
+              Full name
+              <input type="text" name="fullName" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="Your phone number" required />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" placeholder="Your city" required />
+            </label>
+            <label class="full-width">
+              Address
+              <textarea name="address" rows="3" placeholder="Street address" required></textarea>
+            </label>
+            <label class="full-width">
+              Order note
+              <textarea name="note" rows="2" placeholder="Optional note"></textarea>
+            </label>
+          </div>
+
+          <div class="checkout-actions">
+            <button type="button" class="btn btn-secondary checkout-cancel">Cancel</button>
+            <button type="submit" class="btn btn-primary">Send order</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="cart-panel" aria-label="Shopping cart">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow cart-eyebrow">Your bag</p>
+          <h3>Cart</h3>
+        </div>
+        <button class="cart-close" type="button" aria-label="Close cart">×</button>
+      </div>
+
+      <div class="cart-items">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong class="cart-subtotal">$0.00</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong class="cart-total">$0.00</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn" type="button">Checkout</button>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">New Season Arrivals</p>
+            <h1>Style that moves with you.</h1>
+            <p class="hero-text">
+              Discover premium shirts, pants, jeans, and pajamas designed for comfort,
+              confidence, and everyday ease.
+            </p>
+
+            <div class="cta-row">
+              <a href="#shop" class="btn btn-primary">Shop Now</a>
+              <a href="#collections" class="btn btn-secondary">Explore Collection</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>24k+</strong>
+                <span>Happy shoppers</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Average rating</span>
+              </div>
+              <div>
+                <strong>2-day</strong>
+                <span>Quick delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-card main-card">
+              <img
+                src="images/img_1.jpg"
+                alt="Fashion model wearing a stylish outfit"
+              />
+              <div class="floating-badge badge-top">30% OFF</div>
+              <div class="floating-badge badge-bottom">
+                <span>Best Seller</span>
+                <strong>Urban Flex Set</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands">
+        <div class="container brands-row">
+          <span>H&M</span>
+          <span>Levi's</span>
+          <span>Puma</span>
+          <span>Nike</span>
+          <span>Adidas</span>
+          <span>Tommy Hilfiger</span>
+        </div>
+      </section>
+
+      <section class="categories section" id="collections">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Curated Essentials</p>
+            <h2>Shop by category</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <img src="images/img_2.jpg" alt="Shirts" />
+              <div class="category-info">
+                <h3>Shirts</h3>
+                <span>Fresh fits</span>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="images/img_3.jpg" alt="Pants" />
+              <div class="category-info">
+                <h3>Pants</h3>
+                <span>Everyday comfort</span>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="images/img_4.jpg" alt="Jeans" />
+              <div class="category-info">
+                <h3>Jeans</h3>
+                <span>Denim staples</span>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="images/img_5.jpg" alt="Pajamas" />
+              <div class="category-info">
+                <h3>Pajamas</h3>
+                <span>Relax in style</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="products section" id="shop">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Trending choices</p>
+            <h2>Featured products</h2>
+          </div>
+
+          <div class="filter-bar reveal" aria-label="Product filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="shirts">Shirts</button>
+            <button class="filter-btn" data-filter="pants">Pants</button>
+            <button class="filter-btn" data-filter="jeans">Jeans</button>
+            <button class="filter-btn" data-filter="pajamas">Pajamas</button>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal" data-category="shirts">
+              <div class="product-image">
+                <img src="images/img_6.jpg" alt="Classic striped shirt" />
+                <span class="tag">New</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Classic Stripe</h3>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <p>Premium cotton shirt for elevated daily style.</p>
+                <div class="product-row">
+                  <strong>$42</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pants">
+              <div class="product-image">
+                <img src="images/img_7.jpg" alt="Tailored pants" />
+                <span class="tag sale">Sale</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Tailored Ease</h3>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <p>Relaxed fit with smooth movement and structured lines.</p>
+                <div class="product-row">
+                  <strong>$54</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="jeans">
+              <div class="product-image">
+                <img src="images/img_8.jpg" alt="Straight fit jeans" />
+                <span class="tag">Hot</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Straight Fit</h3>
+                  <span class="rating">★ 5.0</span>
+                </div>
+                <p>Classic denim silhouette with a modern, comfortable fit.</p>
+                <div class="product-row">
+                  <strong>$60</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pajamas">
+              <div class="product-image">
+                <img src="images/img_9.jpg" alt="Cozy pajama set" />
+                <span class="tag">Soft</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Cloud Knit</h3>
+                  <span class="rating">★ 4.7</span>
+                </div>
+                <p>Ultra-soft lounge essential that feels as good as it looks.</p>
+                <div class="product-row">
+                  <strong>$39</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="shirts">
+              <div class="product-image">
+                <img src="images/img_10.jpg" alt="Overshirt" />
+                <span class="tag">Trend</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Layer Overshirt</h3>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <p>Clean structure with a relaxed silhouette for everyday layers.</p>
+                <div class="product-row">
+                  <strong>$48</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="jeans">
+              <div class="product-image">
+                <img src="images/img_11.jpg" alt="Washed jeans" />
+                <span class="tag sale">-20%</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Washed Edge</h3>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <p>Vintage-inspired denim with a refined, easy fit.</p>
+                <div class="product-row">
+                  <strong>$58</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pants">
+              <div class="product-image">
+                <img src="images/img_12.jpg" alt="Wide leg pants" />
+                <span class="tag">Bestseller</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Wide Frame</h3>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <p>Flowy wide-leg pants designed for polished everyday styling.</p>
+                <div class="product-row">
+                  <strong>$62</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="shirts">
+              <div class="product-image">
+                <img src="images/img_13.jpg" alt="Oxford shirt" />
+                <span class="tag sale">Fresh</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Oxford Plain</h3>
+                  <span class="rating">★ 4.7</span>
+                </div>
+                <p>Timeless button-down in a breathable, soft-touch blend.</p>
+                <div class="product-row">
+                  <strong>$46</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pajamas">
+              <div class="product-image">
+                <img src="images/img_14.jpg" alt="Nightwear set" />
+                <span class="tag">Cozy</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <h3>Night Bloom</h3>
+                  <span class="rating">★ 5.0</span>
+                </div>
+                <p>Relaxed lounge set with silky fabric and an ultra-soft finish.</p>
+                <div class="product-row">
+                  <strong>$52</strong>
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer section" id="deals">
+        <div class="container offer-box reveal">
+          <div class="offer-copy">
+            <p class="eyebrow">Weekend sale</p>
+            <h2>Save up to 50% on premium essentials.</h2>
+            <p>Build your wardrobe with lightweight layers and elevated basics made to last.</p>
+            <a href="#shop" class="btn btn-primary">Grab the deal</a>
+          </div>
+          <div class="offer-card">
+            <div class="offer-price">
+              <span>Now</span>
+              <strong>$79</strong>
+            </div>
+            <p>Signature comfort bundle</p>
+            <ul>
+              <li>2 shirts</li>
+              <li>1 pair of pants</li>
+              <li>1 lounge set</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="feature reveal">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast shipping</h3>
+              <p>Free delivery on orders over $80 with fast express options.</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon">🛡️</div>
+              <h3>Secure checkout</h3>
+              <p>Protected payment flow with 24/7 order monitoring.</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon">↩️</div>
+              <h3>Easy returns</h3>
+              <p>Simple 30-day returns for confident shopping.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What customers say</p>
+            <h2>Loved by style-conscious shoppers</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The fit is amazing and the quality feels premium. My weekend essentials are now all from Velora.”</p>
+              <div class="person">
+                <strong>Sarah T.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+            <article class="testimonial reveal">
+              <div class="stars">★★★★★</div>
+              <p>“I ordered shirts and jeans and everything arrived quickly. The fabric is soft and totally worth it.”</p>
+              <div class="person">
+                <strong>Daniel M.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+            <article class="testimonial reveal">
+              <div class="stars">★★★★★</div>
+              <p>“The pajama set is unbelievably cozy. It feels like luxury without the huge price tag.”</p>
+              <div class="person">
+                <strong>Claire P.</strong>
+                <span>Verified buyer</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter section">
+        <div class="container newsletter-box reveal">
+          <div>
+            <p class="eyebrow">Get the latest drop</p>
+            <h2>Join our mailing list</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>Velora</span>
+          </div>
+          <p>Modern wardrobe essentials for the everyday movement.</p>
+        </div>
+
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#shop">Shirts</a></li>
+            <li><a href="#shop">Pants</a></li>
+            <li><a href="#shop">Jeans</a></li>
+            <li><a href="#shop">Pajamas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#home">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#deals">Offers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Velora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

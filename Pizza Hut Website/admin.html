@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Hut Admin Login</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="auth-header">
+          <img src="logo.svg" alt="Pizza Hut logo" class="brand-logo" />
+          <div>
+            <span class="eyebrow">Admin Access</span>
+            <h1>Pizza Hut Dashboard</h1>
+          </div>
+        </div>
+
+        <form id="adminLoginForm" class="auth-form">
+          <label>
+            <span>Admin username</span>
+            <input type="text" value="admin" readonly />
+          </label>
+
+          <label>
+            <span>Password</span>
+            <input type="password" id="adminPassword" placeholder="Enter admin password" required />
+          </label>
+
+          <p id="loginMessage" class="message" aria-live="polite"></p>
+
+          <button type="submit" class="btn btn-primary">Open Dashboard</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

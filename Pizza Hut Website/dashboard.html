@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Hut Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="dash-header">
+        <a href="index.html" class="brand" aria-label="Back to home">
+          <img src="logo.svg" alt="Pizza Hut logo" class="brand-logo" />
+          <span>Pizza Hut Admin</span>
+        </a>
+        <div class="header-actions">
+          <span class="live-badge">Live Orders</span>
+          <a href="index.html" class="btn btn-primary">Back to Website</a>
+        </div>
+      </header>
+
+      <main class="dashboard-layout">
+        <section class="panel order-panel">
+          <div class="panel-heading">
+            <span class="eyebrow">Admin</span>
+            <h1>Create order</h1>
+          </div>
+
+          <form id="orderForm">
+            <div class="field-row">
+              <label>
+                <span>Customer name</span>
+                <input type="text" name="customerName" placeholder="John Smith" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="(555) 123-4567" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Item</span>
+                <select name="item" id="itemSelect" required>
+                  <option value="Pepperoni Party">Pepperoni Party</option>
+                  <option value="Supreme Delight">Supreme Delight</option>
+                  <option value="Margherita">Margherita</option>
+                  <option value="Garlic Bread">Garlic Bread</option>
+                  <option value="Fresh Soda">Fresh Soda</option>
+                  <option value="Buffalo Wings">Buffalo Wings</option>
+                </select>
+              </label>
+              <label>
+                <span>Quantity</span>
+                <input type="number" name="quantity" value="1" min="1" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Size</span>
+                <select name="size">
+                  <option value="Small">Small</option>
+                  <option value="Medium" selected>Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="Family">Family</option>
+                </select>
+              </label>
+              <label>
+                <span>Delivery type</span>
+                <select name="deliveryType">
+                  <option value="Delivery" selected>Delivery</option>
+                  <option value="Pickup">Pickup</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Delivery address</span>
+              <textarea name="address" rows="3" placeholder="123 Main Street, City" required></textarea>
+            </label>
+
+            <label>
+              <span>Notes</span>
+              <textarea name="notes" rows="3" placeholder="Any extra requests..."></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary btn-full">Place Order</button>
+          </form>
+        </section>
+
+        <aside class="panel summary-panel">
+          <div class="panel-heading">
+            <span class="eyebrow">Overview</span>
+            <h2>Order dashboard</h2>
+          </div>
+
+          <div class="stats-grid">
+            <article>
+              <span>Total Orders</span>
+              <strong id="totalOrders">0</strong>
+            </article>
+            <article>
+              <span>Pending</span>
+              <strong id="pendingOrders">0</strong>
+            </article>
+            <article>
+              <span>Completed</span>
+              <strong id="completedOrders">0</strong>
+            </article>
+          </div>
+
+          <div class="recent-orders">
+            <h3>Recent orders</h3>
+            <ul id="orderList">
+              <li class="empty-state">No orders yet.</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

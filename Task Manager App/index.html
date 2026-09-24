@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="task-app-page">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="brand-mark">TM</div>
+          <div>
+            <strong>TaskFlow</strong>
+            <small>Project hub</small>
+          </div>
+        </div>
+
+        <nav class="side-nav" aria-label="Sidebar navigation">
+          <a class="active" href="#" data-nav="dashboard"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+          <a href="#" data-nav="tasks"><i class="fa-solid fa-list-check"></i> Tasks</a>
+          <a href="#" data-nav="calendar"><i class="fa-solid fa-calendar-days"></i> Calendar</a>
+          <a href="#" data-nav="projects"><i class="fa-solid fa-briefcase"></i> Projects</a>
+          <a href="#" data-nav="settings"><i class="fa-solid fa-gear"></i> Settings</a>
+        </nav>
+
+        <div class="mini-panel">
+          <p>Productivity</p>
+          <strong>87%</strong>
+          <span>Strong performance</span>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Today</p>
+            <h1 id="pageTitle">Project task board</h1>
+          </div>
+
+          <div class="topbar-right">
+            <button class="icon-btn" aria-label="Notifications"><i class="fa-solid fa-bell"></i></button>
+            <div class="user-box">
+              <div class="avatar">SA</div>
+              <div>
+                <strong>Sauban Ali</strong>
+                <small>Manager</small>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="page-panel active" data-view="dashboard">
+          <section class="stats-grid">
+            <article class="stat-card accent">
+              <span>Total tasks</span>
+              <strong id="totalCount">0</strong>
+              <small>Active workload</small>
+            </article>
+            <article class="stat-card">
+              <span>Completed</span>
+              <strong id="completedCount">0</strong>
+              <small>Finished today</small>
+            </article>
+            <article class="stat-card">
+              <span>Pending</span>
+              <strong id="pendingCount">0</strong>
+              <small>Needs attention</small>
+            </article>
+            <article class="stat-card">
+              <span>Progress</span>
+              <strong id="progressValue">0%</strong>
+              <small>Average status</small>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Task list</h2>
+                <div class="filters">
+                  <button class="filter-btn active" data-filter="all">All</button>
+                  <button class="filter-btn" data-filter="pending">Pending</button>
+                  <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+              </div>
+
+              <form id="taskForm" class="task-form">
+                <input id="taskInput" type="text" placeholder="Add a new task" aria-label="Add new task" required />
+                <button type="submit">Add Task</button>
+              </form>
+
+              <ul id="taskList" class="task-list"></ul>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <h2>Upcoming</h2>
+                <a href="#">View all</a>
+              </div>
+
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <div class="schedule-dot red"></div>
+                  <div>
+                    <strong>UI sync</strong>
+                    <span>10:00 AM</span>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <div class="schedule-dot yellow"></div>
+                  <div>
+                    <strong>Marketing review</strong>
+                    <span>01:30 PM</span>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <div class="schedule-dot green"></div>
+                  <div>
+                    <strong>Deployment check</strong>
+                    <span>04:00 PM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-chart">
+                <span style="height:30%"></span>
+                <span style="height:45%"></span>
+                <span style="height:64%"></span>
+                <span style="height:58%"></span>
+                <span style="height:80%"></span>
+                <span style="height:92%"></span>
+                <span style="height:72%"></span>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="page-panel" data-view="tasks">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <h2>Task overview</h2>
+            </div>
+            <div class="info-list">
+              <div class="info-row"><span>Design approval</span><strong>Ready</strong></div>
+              <div class="info-row"><span>Bug review</span><strong>3 items</strong></div>
+              <div class="info-row"><span>Content update</span><strong>Pending</strong></div>
+              <div class="info-row"><span>Client follow-up</span><strong>2 calls</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="calendar">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <h2>Weekly calendar</h2>
+            </div>
+            <div class="calendar-grid">
+              <div><span>Mon</span><strong>Planning</strong></div>
+              <div><span>Tue</span><strong>Design</strong></div>
+              <div><span>Wed</span><strong>Review</strong></div>
+              <div><span>Thu</span><strong>Build</strong></div>
+              <div><span>Fri</span><strong>Launch</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="projects">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <h2>Active projects</h2>
+            </div>
+            <div class="info-list">
+              <div class="info-row"><span>Portfolio site</span><strong>92%</strong></div>
+              <div class="info-row"><span>Business app</span><strong>76%</strong></div>
+              <div class="info-row"><span>Marketing landing page</span><strong>64%</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-panel" data-view="settings">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <h2>Workspace settings</h2>
+            </div>
+            <div class="settings-list">
+              <label><span>Enable notifications</span><input type="checkbox" checked /></label>
+              <label><span>Daily summary email</span><input type="checkbox" checked /></label>
+              <label><span>Automatic backups</span><input type="checkbox" /></label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

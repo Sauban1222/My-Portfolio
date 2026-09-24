@@ -1,0 +1,33 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="420" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B31217"/>
+      <stop offset="0.5" stop-color="#D72638"/>
+      <stop offset="1" stop-color="#7A0D15"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="120" y1="60" x2="390" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E5D7"/>
+      <stop offset="1" stop-color="#F1C99E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" rx="30" fill="#0D0D0F"/>
+
+  <g transform="translate(36 44)">
+    <rect x="0" y="0" width="260" height="260" rx="62" fill="url(#grad1)"/>
+    <rect x="28" y="28" width="204" height="204" rx="50" fill="#1B1B1D" opacity="0.25"/>
+
+    <path d="M94 74L56 130L94 186" stroke="url(#grad2)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M166 74L204 130L166 186" stroke="url(#grad2)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M142 64L118 196" stroke="url(#grad2)" stroke-width="16" stroke-linecap="round"/>
+
+    <path d="M70 214C82 195 101 183 123 183H129C152 183 171 195 183 214" stroke="#F8E5D7" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(340 116)">
+    <text x="0" y="62" fill="#F7F1EE" font-size="62" font-weight="800" letter-spacing="3" font-family="Segoe UI, Arial, sans-serif">CODE</text>
+    <text x="0" y="120" fill="#D99A8A" font-size="34" font-weight="700" letter-spacing="6" font-family="Segoe UI, Arial, sans-serif">WITH SAUBAN</text>
+    <rect x="0" y="150" width="344" height="4" rx="2" fill="url(#grad1)"/>
+    <text x="0" y="204" fill="#E7B6A0" font-size="24" font-weight="600" letter-spacing="7" font-family="Segoe UI, Arial, sans-serif">WEB DEVELOPMENT • DESIGN • BRANDING</text>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE With SAUBAN Brand Kit</title>
+    <style>
+      :root {
+        --bg: #071622;
+        --bg-2: #0d1d2f;
+        --panel: rgba(255,255,255,0.04);
+        --line: rgba(255,255,255,0.08);
+        --text: #edf6ff;
+        --muted: #9cb7d4;
+        --cyan: #69d4ff;
+        --blue: #6a8bff;
+        --purple: #9d7bff;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(circle at top left, rgba(105, 212, 255, 0.18), transparent 25%), linear-gradient(135deg, var(--bg), var(--bg-2));
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px 70px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin: 0 0 10px;
+        letter-spacing: -0.06em;
+      }
+      p.subtitle {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 20px;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 14px;
+        display: block;
+        background: #0a1421;
+      }
+      .label {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--cyan);
+        font-weight: 700;
+      }
+      .card h3 {
+        margin: 12px 0 6px;
+        font-size: 1.2rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>CODE With SAUBAN</h1>
+      <p class="subtitle">Professional brand kit for social media and digital identity.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="logo-primary.svg" alt="Primary logo" />
+          <div class="label">Primary Logo</div>
+          <h3>Website / Portfolio</h3>
+          <p>Strong logo for headers, branding, and digital projects.</p>
+        </div>
+
+        <div class="card">
+          <img src="logo-mark.svg" alt="Icon logo" />
+          <div class="label">Brand Mark</div>
+          <h3>Profile Icon</h3>
+          <p>Compact monogram for profile pictures and app icons.</p>
+        </div>
+
+        <div class="card">
+          <img src="profile-avatar.svg" alt="Profile avatar" />
+          <div class="label">Social Avatar</div>
+          <h3>Instagram / Facebook</h3>
+          <p>Professional square avatar optimized for social media.</p>
+        </div>
+
+        <div class="card">
+          <img src="social-cover.svg" alt="Social cover" />
+          <div class="label">Cover Banner</div>
+          <h3>Facebook / LinkedIn Banner</h3>
+          <p>Clean banner design that works for social account headers.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
