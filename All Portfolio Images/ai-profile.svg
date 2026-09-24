@@ -1,0 +1,54 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 520) rotate(90) scale(940 860)">
+      <stop stop-color="#3D0B12"/>
+      <stop offset="0.38" stop-color="#130D12"/>
+      <stop offset="1" stop-color="#07090C"/>
+    </radialGradient>
+    <linearGradient id="shirt" x1="430" y1="660" x2="820" y2="1260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242931"/>
+      <stop offset="0.5" stop-color="#0F1218"/>
+      <stop offset="1" stop-color="#05080D"/>
+    </linearGradient>
+    <linearGradient id="face" x1="500" y1="300" x2="710" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1C29D"/>
+      <stop offset="1" stop-color="#D18D6F"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="240" y1="240" x2="980" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6572"/>
+      <stop offset="0.5" stop-color="#FF465C"/>
+      <stop offset="1" stop-color="#B80C1D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1400" fill="url(#bg)"/>
+
+  <g opacity="0.96">
+    <circle cx="600" cy="500" r="330" stroke="url(#ring)" stroke-width="12"/>
+    <circle cx="600" cy="500" r="395" stroke="url(#ring)" stroke-opacity="0.32" stroke-width="4"/>
+  </g>
+
+  <g opacity="0.64">
+    <path d="M170 255C280 180 340 182 430 212" stroke="#FF4D5A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M1030 255C930 180 860 182 770 212" stroke="#FF4D5A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M230 920C310 980 382 1015 470 1048" stroke="#FF4D5A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M970 920C890 980 818 1015 730 1048" stroke="#FF4D5A" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M470 430C512 368 550 340 600 340C650 340 688 368 730 430L780 570C754 552 716 540 682 538L660 538C646 501 627 468 600 468C573 468 554 501 540 538L518 538C484 540 446 552 420 570L470 430Z" fill="#10151C"/>
+
+    <path d="M490 450C518 404 556 374 600 374C644 374 682 404 710 450L740 620C714 668 672 705 600 726C528 705 486 668 460 620L490 450Z" fill="url(#face)"/>
+
+    <path d="M510 450C548 405 570 388 600 388C630 388 652 405 690 450" stroke="#171C23" stroke-width="22" stroke-linecap="round"/>
+    <path d="M520 555C540 579 567 596 600 596C633 596 660 579 680 555" stroke="#CE8B70" stroke-width="8" stroke-linecap="round"/>
+
+    <circle cx="560" cy="496" r="7.5" fill="#171C23"/>
+    <circle cx="640" cy="496" r="7.5" fill="#171C23"/>
+    <path d="M575 575C587 585 594 590 600 590C606 590 613 585 625 575" stroke="#8E534A" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M468 680L350 1088H850L732 680H468Z" fill="url(#shirt)"/>
+    <path d="M434 1030H766C789 1030 808 1048 808 1071V1160C808 1196 778 1226 742 1226H458C422 1226 392 1196 392 1160V1071C392 1048 411 1030 434 1030Z" fill="#090B10"/>
+    <path d="M518 680C544 712 570 730 600 730C630 730 656 712 682 680" stroke="#FF4D5A" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  </g>
+</svg>
