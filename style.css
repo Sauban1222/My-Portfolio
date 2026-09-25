@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -74,6 +75,7 @@ textarea {
 
 .section {
   padding: 110px 0;
+  scroll-margin-top: 90px;
 }
 
 .eyebrow {
@@ -807,6 +809,11 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
   .hero-grid,
   .about-grid,
   .contact-wrap,
